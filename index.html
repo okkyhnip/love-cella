@@ -1,0 +1,1072 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Sella ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff6f8;
+    color: #684b55;
+    overflow-x: hidden;
+}
+
+:root {
+    --pink: #ff8eae;
+    --pink-dark: #e96f95;
+    --pink-light: #ffe1ea;
+    --cream: #fff9fa;
+    --text: #684b55;
+}
+
+section {
+    padding: 85px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.script {
+    font-family: 'Dancing Script', cursive;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(38px, 7vw, 58px);
+    color: var(--pink-dark);
+}
+
+.section-title p {
+    font-size: 13px;
+    color: #a78b94;
+    margin-top: 8px;
+}
+
+/* FLOATING HEARTS */
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    color: #ff9db9;
+    pointer-events: none;
+    z-index: 1;
+    animation: floatHeart linear forwards;
+    opacity: .65;
+}
+
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: .7;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 30px 20px;
+    background:
+        radial-gradient(circle at 15% 20%, #ffe2eb, transparent 35%),
+        radial-gradient(circle at 85% 80%, #ffd8e5, transparent 35%),
+        #fff8fa;
+}
+
+.hero-content {
+    max-width: 700px;
+    position: relative;
+    z-index: 2;
+}
+
+.small-label {
+    display: inline-block;
+    padding: 9px 20px;
+    border: 1px solid #ffc3d4;
+    border-radius: 30px;
+    color: #d77b98;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    background: #ffffffa8;
+}
+
+.hero h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(65px, 13vw, 115px);
+    color: var(--pink-dark);
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: clamp(15px, 3vw, 20px);
+    font-weight: 400;
+    color: #9b7885;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 500px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 14px;
+    color: #997d87;
+}
+
+.hero-photo {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 7px solid white;
+    box-shadow: 0 10px 35px #eaa5ba66;
+    margin: 28px auto;
+    display: block;
+}
+
+.main-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff9bb8, #e9799c);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 40px;
+    padding: 14px 28px;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px #e9799c44;
+    transition: .3s;
+}
+
+.main-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px #e9799c55;
+}
+
+.scroll-text {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    font-size: 11px;
+    color: #c39aa8;
+    letter-spacing: 2px;
+}
+
+/* MUSIC */
+
+.music-section {
+    padding: 35px 20px;
+    background: #fff0f4;
+}
+
+.music-card {
+    max-width: 520px;
+    margin: auto;
+    background: white;
+    padding: 22px;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px #e8b3c322;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.music-icon {
+    width: 55px;
+    height: 55px;
+    background: #ffe1eb;
+    color: #df7899;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.music-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.music-info h3 {
+    font-size: 13px;
+    color: #815969;
+}
+
+.music-info p {
+    font-size: 11px;
+    color: #b69aa4;
+    margin-top: 3px;
+}
+
+.music-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.music-controls button {
+    border: none;
+    background: #ff91b0;
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#musicPrompt {
+    display: none;
+    text-align: center;
+    margin: 14px auto 0;
+    font-size: 12px;
+    color: #a17d8b;
+}
+
+#musicPrompt button {
+    margin-top: 8px;
+    padding: 9px 18px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background: #e9799c;
+    cursor: pointer;
+}
+
+/* LETTER */
+
+.letter-section {
+    background: #fff8fa;
+}
+
+.letter {
+    max-width: 720px;
+    margin: auto;
+    background: white;
+    padding: clamp(25px, 6vw, 55px);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px #e9b9c52a;
+    position: relative;
+    line-height: 2;
+    font-size: 14px;
+    color: #876b76;
+}
+
+.letter::before {
+    content: "♡";
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    color: #ffd0de;
+}
+
+.letter h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #df7899;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.letter p {
+    margin-bottom: 17px;
+}
+
+.signature {
+    text-align: right;
+    font-family: 'Dancing Script', cursive;
+    color: #df7899;
+    font-size: 29px;
+    margin-top: 25px;
+}
+
+/* GALLERY */
+
+.gallery-section {
+    background: #fff0f4;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.gallery-item {
+    background: white;
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #e7b2c122;
+    transform: rotate(-1deg);
+    transition: .3s;
+}
+
+.gallery-item:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+.gallery-item:hover {
+    transform: translateY(-6px) rotate(0);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.gallery-item p {
+    text-align: center;
+    padding: 12px 5px 5px;
+    font-family: 'Dancing Script', cursive;
+    color: #c77995;
+    font-size: 23px;
+}
+
+/* COUNTDOWN */
+
+.countdown-section {
+    background: #fff9fa;
+    text-align: center;
+}
+
+.countdown-box {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px 20px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ffe0e9, #fff0f5);
+    box-shadow: 0 12px 35px #eab4c52c;
+}
+
+.countdown-box h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 38px;
+    color: #d96f91;
+    margin-bottom: 10px;
+}
+
+.countdown-box > p {
+    font-size: 13px;
+    color: #a47e8d;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.time-box {
+    background: #ffffffc9;
+    border-radius: 15px;
+    padding: 18px 5px;
+}
+
+.time-box span {
+    display: block;
+    font-size: clamp(24px, 6vw, 38px);
+    font-weight: 600;
+    color: #dc7697;
+}
+
+.time-box small {
+    font-size: 10px;
+    color: #a98a95;
+}
+
+.countdown-note {
+    margin-top: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 26px;
+    color: #d96f91;
+}
+
+/* PROMISE */
+
+.promise-section {
+    background: #fff0f4;
+}
+
+.promise-card {
+    max-width: 650px;
+    background: white;
+    margin: auto;
+    text-align: center;
+    padding: 40px 25px;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px #eab4c522;
+}
+
+.promise-card .big-heart {
+    font-size: 55px;
+    color: #ff8eae;
+    margin-bottom: 15px;
+}
+
+.promise-card h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #dc7697;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.promise-card p {
+    font-size: 14px;
+    line-height: 2;
+    color: #987b86;
+}
+
+/* SURPRISE */
+
+.surprise-section {
+    text-align: center;
+    background: #fff8fa;
+}
+
+.surprise-section p {
+    color: #a48792;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+#surpriseMessage {
+    display: none;
+    max-width: 600px;
+    margin: 30px auto 0;
+    background: white;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px #eab4c533;
+    color: #966d7d;
+    line-height: 2;
+    animation: appear .6s ease;
+}
+
+#surpriseMessage h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 38px;
+    color: #df7899;
+    margin-bottom: 12px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: #ffe8ef;
+    padding: 35px 20px;
+    color: #b27f91;
+    font-size: 12px;
+    line-height: 2;
+}
+
+footer .footer-love {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #d96f91;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    section {
+        padding: 65px 17px;
+    }
+
+    .hero-photo {
+        width: 135px;
+        height: 135px;
+    }
+
+    .gallery {
+        gap: 10px;
+    }
+
+    .gallery-item {
+        padding: 7px;
+    }
+
+    .gallery-item img {
+        height: 190px;
+    }
+
+    .gallery-item p {
+        font-size: 19px;
+    }
+
+    .music-card {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .music-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .countdown {
+        gap: 6px;
+    }
+
+    .time-box {
+        padding: 14px 3px;
+    }
+
+    .time-box small {
+        font-size: 9px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIK -->
+<audio id="music" src="music.mp3" autoplay loop preload="auto"></audio>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="small-label">
+            A LITTLE SURPRISE FOR YOU ♡
+        </div>
+
+        <h1>For Sella</h1>
+
+        <h2>To my favorite person, my Sella ♡</h2>
+
+        <img
+            src="sella.jpeg"
+            alt="Foto Sella"
+            class="hero-photo"
+        >
+
+        <p>
+            Mungkin kita belum pernah bertemu secara langsung,
+            tapi ada seseorang yang berhasil membuat hari-hariku
+            terasa lebih indah hanya melalui pesan dan perhatian kecilnya.
+        </p>
+
+        <br>
+
+        <a href="#letter" class="main-button">
+            Open My Little Heart ♡
+        </a>
+
+    </div>
+
+    <div class="scroll-text">
+        SCROLL DOWN TO SEE MORE ♡
+    </div>
+
+</section>
+
+<!-- MUSIC PLAYER -->
+<div class="music-section">
+
+    <div class="music-card">
+
+        <div class="music-icon">♫</div>
+
+        <div class="music-info">
+            <h3>Our Little Song ♡</h3>
+            <p>A song that reminds me of you</p>
+        </div>
+
+        <div class="music-controls">
+            <button id="musicButton" onclick="toggleMusic()">Ⅱ</button>
+        </div>
+
+    </div>
+
+    <div id="musicPrompt">
+        Browser mungkin membatasi musik otomatis.
+        <br>
+        Tekan tombol berikut untuk memutar lagu kita.
+        <br>
+        <button onclick="startOurSong()">Play Our Song ♡</button>
+    </div>
+
+</div>
+
+<!-- LETTER -->
+<section class="letter-section" id="letter">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>A Letter For You</h2>
+            <p>A little message from my heart</p>
+        </div>
+
+        <div class="letter">
+
+            <h3>Dear Sella, ♡</h3>
+
+            <p>
+                Hai, Sella sayang.
+            </p>
+
+            <p>
+                Aku cuma mau bilang kalau aku senang bisa kenal kamu.
+            </p>
+
+            <p>
+                Walaupun kita belum pernah ketemu langsung, aku sudah nyaman sama kamu. Senang rasanya bisa ngobrol, bercanda, dan berbagi cerita setiap hari.
+            </p>
+
+            <p>
+                Aku nggak minta hubungan kita selalu sempurna. Aku cuma berharap kita bisa saling mengerti, saling menjaga, dan tetap bersama dalam keadaan apa pun.
+            </p>
+
+            <p>
+                Aku juga nggak sabar menunggu tanggal 11 Oktober nanti. Akhirnya kita bisa ketemu langsung setelah sekian lama cuma ngobrol lewat layar.
+            </p>
+
+            <p>
+                Aku juga nggak sabar menunggu tanggal 11 Oktober nanti. Akhirnya kita bisa ketemu langsung setelah sekian lama cuma ngobrol lewat layar.
+            </p>
+
+            <p>
+                Makasih sudah hadir di hidup aku.
+            </p>
+
+            <p>
+                See you soon, my favorite person.
+                Jangan lupa jaga diri baik-baik, ya.
+            </p>
+
+            <div class="signature">
+                With love,<br>
+                Hanif ♡
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Little Pieces of You</h2>
+            <p>Some pictures, many feelings ♡</p>
+        </div>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="foto1.jpeg" alt="Kenangan Sella 1">
+                <p>My favorite smile ♡</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="foto2.jpeg" alt="Kenangan Sella 2">
+                <p>Pretty as always</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="foto3.jpeg" alt="Kenangan Sella 3">
+                <p>My happy little place</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="foto4.jpeg" alt="Kenangan Sella 4">
+                <p>Always my favorite</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our First Meet</h2>
+            <p>One special day that I am waiting for</p>
+        </div>
+
+        <div class="countdown-box">
+
+            <h3>October 11, 2026 ♡</h3>
+
+            <p>
+                The day we finally meet face to face.
+            </p>
+
+            <div class="countdown">
+
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+
+            </div>
+
+            <div class="countdown-note" id="countdownNote">
+                Counting every moment until I see you ♡
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROMISE -->
+<section class="promise-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>My Little Promise</h2>
+            <p>Something I want you to know</p>
+        </div>
+
+        <div class="promise-card">
+
+            <div class="big-heart">♡</div>
+
+            <h3>Even Before We Meet</h3>
+
+            <p>
+                Aku ingin tetap menjadi seseorang yang
+                bisa kamu ceritakan tentang hari-harimu.
+                <br><br>
+
+                Seseorang yang mendengarkan cerita random kamu,
+                menemani saat kamu lelah, dan ikut bahagia
+                ketika kamu mendapatkan sesuatu yang kamu inginkan.
+                <br><br>
+
+                Jarak mungkin membuat kita belum bisa
+                bertemu setiap saat, tetapi aku ingin
+                kita tetap saling memberikan waktu dan perhatian.
+                <br><br>
+
+                Let's make our own beautiful story, together.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SURPRISE -->
+<section class="surprise-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>One Last Thing...</h2>
+            <p>There is something I haven't told you yet.</p>
+        </div>
+
+        <p>
+            Sella, coba tekan tombol di bawah ini.
+        </p>
+
+        <button class="main-button" onclick="showSurprise()">
+            Click for a Surprise ♡
+        </button>
+
+        <div id="surpriseMessage">
+
+            <h3>I Choose You, Sella ♡</h3>
+
+            <p>
+                Dari sekian banyak orang yang bisa hadir
+                di hidup aku, aku bersyukur bisa mengenal kamu.
+                <br><br>
+
+                Aku tidak tahu bagaimana cerita kita
+                akan berjalan ke depannya, tetapi aku ingin
+                menikmati setiap prosesnya bersama kamu.
+                <br><br>
+
+                Sampai nanti kita benar-benar bertemu,
+                tetap jadi Sella yang aku kenal, ya.
+                <br><br>
+
+                I can't wait to see you.
+                <br><br>
+
+                <strong>With all my love, Hanif ♡</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-love">
+        Made with love, for Sella ♡
+    </div>
+
+    <p>
+        Every little thing reminds me of you.
+    </p>
+
+    <p>
+        © 2026 | Hanif & Sella
+    </p>
+
+</footer>
+
+<script>
+
+/* =========================
+   MUSIC AUTOPLAY
+========================= */
+
+const music = document.getElementById("music");
+const musicButton = document.getElementById("musicButton");
+const musicPrompt = document.getElementById("musicPrompt");
+
+function startOurSong() {
+
+    music.play()
+        .then(() => {
+            musicButton.innerHTML = "Ⅱ";
+            musicPrompt.style.display = "none";
+        })
+        .catch(() => {
+            musicPrompt.style.display = "block";
+        });
+
+}
+
+function toggleMusic() {
+
+    if (music.paused) {
+
+        startOurSong();
+
+    } else {
+
+        music.pause();
+        musicButton.innerHTML = "▶";
+
+    }
+
+}
+
+window.addEventListener("load", () => {
+
+    music.play()
+        .then(() => {
+            musicButton.innerHTML = "Ⅱ";
+        })
+        .catch(() => {
+            musicPrompt.style.display = "block";
+            musicButton.innerHTML = "▶";
+        });
+
+});
+
+/* =========================
+   COUNTDOWN 11 OKTOBER 2026
+========================= */
+
+const meetingDate = new Date(2026, 9, 11, 0, 0, 0).getTime();
+
+function updateCountdown() {
+
+    const now = new Date().getTime();
+    const distance = meetingDate - now;
+
+    if (distance <= 0) {
+
+        document.getElementById("days").innerText = "00";
+        document.getElementById("hours").innerText = "00";
+        document.getElementById("minutes").innerText = "00";
+        document.getElementById("seconds").innerText = "00";
+
+        document.getElementById("countdownNote").innerText =
+            "Today is our special day! Finally, we meet ♡";
+
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
+
+    document.getElementById("days").innerText =
+        String(days).padStart(2, "0");
+
+    document.getElementById("hours").innerText =
+        String(hours).padStart(2, "0");
+
+    document.getElementById("minutes").innerText =
+        String(minutes).padStart(2, "0");
+
+    document.getElementById("seconds").innerText =
+        String(seconds).padStart(2, "0");
+
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+/* =========================
+   SURPRISE BUTTON
+========================= */
+
+function showSurprise() {
+
+    const message = document.getElementById("surpriseMessage");
+
+    message.style.display = "block";
+
+    message.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+    createHearts(20);
+
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    const hearts = ["♡", "♥", "💕", "💗"];
+
+    heart.innerHTML = hearts[
+        Math.floor(Math.random() * hearts.length)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (15 + Math.random() * 20) + "px";
+
+    heart.style.animationDuration =
+        (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 10000);
+
+}
+
+function createHearts(amount) {
+
+    for (let i = 0; i < amount; i++) {
+
+        setTimeout(createHeart, i * 100);
+
+    }
+
+}
+
+setInterval(createHeart, 700);
+
+</script>
+
+</body>
+</html>
